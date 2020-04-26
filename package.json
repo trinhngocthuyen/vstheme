@@ -1,0 +1,22 @@
+{
+    "name": "chris-decor",
+    "displayName": "Chris-Decor",
+    "publisher": "trinhngocthuyen",
+    "description": "A dark theme for VSCode",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.44.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Chris-Decor",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Chris-Decor-color-theme.json"
+            }
+        ]
+    }
+}

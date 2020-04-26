@@ -1,0 +1,10 @@
+name: 'A feature'
+description: 'Description of the feature'
+rollout:
+  - if: 'XCODE_VERSION'
+    match: '11'
+    then: 2
+  - if: 'CI_COMMIT_REF_NAME'
+    match: '(master|release)'
+    then: 4
+  - default: 3  # 👈 use this value in CI/CD code
