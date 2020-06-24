@@ -169,6 +169,7 @@
 			],
 			"settings": {
 				"foreground": "#a8b346",
+				"fontStyle": "italic"
 			}
 		},
 		{
@@ -185,6 +186,27 @@
 			],
 			"settings": {
 				"foreground": "#FFCB6B",
+			}
+		},
+		{
+			"name": "Class, Module",
+			"scope": [
+				"entity.name.type.module",
+				"entity.name.type.class"
+			],
+			"settings": {
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Functions",
+			"scope": [
+				"support.function.core",
+				"support.function.kernel",
+				"entity.name.function"
+			],
+			"settings": {
+				"fontStyle": "italic"
 			}
 		},
 		{
@@ -322,7 +344,7 @@
 				"string.regexp"
 			],
 			"settings": {
-				"foreground": "#89DDFF"
+				"foreground": "#2ab6ee"
 			}
 		},
 		{

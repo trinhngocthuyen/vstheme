@@ -3,7 +3,8 @@
     "displayName": "Chris-Decor",
     "publisher": "trinhngocthuyen",
     "description": "A dark theme for VSCode",
-    "version": "0.0.1",
+    "repository": "https://github.com/trinhngocthuyen/vstheme-chris-decor",
+    "version": "0.0.2",
     "engines": {
         "vscode": "^1.44.0"
     },
