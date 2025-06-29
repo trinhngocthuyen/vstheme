@@ -1,0 +1,38 @@
+{
+  "name": "xcconfig",
+  "scopeName": "source.xcconfig",
+  "patterns": [
+		{
+			"include": "source.swift#comments"
+		},
+    {
+      "name": "include.xcconfig",
+      "match": "^\\s*#\\s*include\\??\\s*(<[^>]+>|\"[^\"]+\")",
+      "captures": {
+        "0": { "name": "keyword.control.directive.include.xcconfig" },
+        "1": { "name": "string.quoted.double.include.xcconfig" }
+      }
+    },
+    {
+      "name": "assignment.xcconfig",
+      "begin": "^\\s*([A-Z0-9_]+)(\\[(.+)=(.+)\\])?\\s*=\\s*",
+      "end": "$",
+      "captures": {
+        "1": { "name": "variable.assignment.key.xcconfig" },
+        "2": { "name": "meta.condition.xcconfig" },
+        "3": { "name": "meta.condition.key.xcconfig" },
+        "4": { "name": "meta.condition.value.xcconfig" }
+      },
+      "patterns": [
+        {
+          "match": "\\$[\\(\\{][A-Za-z_][A-Za-z0-9_]*[\\}\\)]",
+          "name": "variable.other.interpolation.shell"
+        },
+        {
+          "match": "[^\\$]+",
+          "name": "string.unquoted.value.xcconfig"
+        }
+      ]
+    }
+	]
+}

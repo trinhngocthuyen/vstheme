@@ -158,7 +158,7 @@
 				"string.other.link"
 			],
 			"settings": {
-				"foreground": "#f07178"
+				"foreground": "#f07178" // orange
 			}
 		},
 		{
@@ -806,6 +806,17 @@
       ],
       "settings": {
         "foreground": "#72b5eccc",
+      }
+    },
+    {
+      "name": "XCConfig - Assignment Condition",
+      "scope": [
+        "source.xcconfig meta.condition.key.xcconfig",
+        "source.xcconfig meta.condition.value.xcconfig",
+      ],
+      "settings": {
+        "foreground": "#f07178",
+        "fontStyle": "italic",
       }
     },
 	]

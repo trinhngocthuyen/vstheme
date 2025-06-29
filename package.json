@@ -1,4 +1,5 @@
 {
+  "version": "0.1.1",
   "name": "chris-decor",
   "displayName": "Chris' Decor",
   "publisher": "trinhngocthuyen",
@@ -8,7 +9,6 @@
     "url": "https://github.com/trinhngocthuyen/vstheme.git"
   },
   "license": "MIT",
-  "version": "0.1.0",
   "icon": "res/icon.png",
   "engines": {
     "vscode": "^1.44.0"
@@ -22,6 +22,19 @@
         "label": "Chris' Decor",
         "uiTheme": "vs-dark",
         "path": "./themes/chris-decor-color-theme.json"
+      }
+    ],
+    "languages": [
+      {
+        "id": "xcconfig",
+        "extensions": [".xcconfig"]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "xcconfig",
+        "scopeName": "source.xcconfig",
+        "path": "./syntaxes/xcconfig.tmLanguage.json"
       }
     ]
   }
