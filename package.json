@@ -1,23 +1,28 @@
 {
-    "name": "chris-decor",
-    "displayName": "Chris-Decor",
-    "publisher": "trinhngocthuyen",
-    "description": "A dark theme for VSCode",
-    "repository": "https://github.com/trinhngocthuyen/vstheme-chris-decor",
-    "version": "0.0.2",
-    "engines": {
-        "vscode": "^1.44.0"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "Chris-Decor",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Chris-Decor-color-theme.json"
-            }
-        ]
-    }
+  "name": "chris-decor",
+  "displayName": "Chris' Decor",
+  "publisher": "trinhngocthuyen",
+  "description": "Yet another theme for VSCode",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trinhngocthuyen/vstheme.git"
+  },
+  "license": "MIT",
+  "version": "0.1.0",
+  "icon": "res/icon.png",
+  "engines": {
+    "vscode": "^1.44.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Chris' Decor",
+        "uiTheme": "vs-dark",
+        "path": "./themes/chris-decor-color-theme.json"
+      }
+    ]
+  }
 }

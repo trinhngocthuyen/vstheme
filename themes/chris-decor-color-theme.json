@@ -1,5 +1,5 @@
 {
-	"name": "Chris Decor",
+  "name": "Chris Decor",
 	"type": "dark",
 	"colors": {
 		"editor.background": "#202a30",
@@ -7,7 +7,7 @@
 		"activityBarBadge.background": "#007acc",
 		"sideBar.background": "#28343b",
 		"activityBar.background": "#202a30",
-		"sideBarTitle.foreground": "#bbbbbb",
+		"sideBarTitle.foreground": "#bbbbbb"
 	},
 	"tokenColors": [
 		{
@@ -21,6 +21,16 @@
 				"foreground": "#546E7A"
 			}
 		},
+    {
+			"name": "Comment - Triple",
+			"scope": [
+				"comment.line.triple-slash",
+        "comment.line.triple-slash punctuation.definition.comment",
+			],
+			"settings": {
+				"fontStyle": "italic bold",
+			}
+		},
 		{
 			"name": "Variables",
 			"scope": [
@@ -28,7 +38,7 @@
 				"string constant.other.placeholder"
 			],
 			"settings": {
-				"foreground": "#15dbdb"
+				"foreground": "#08dada"
 			}
 		},
 		{
@@ -56,7 +66,7 @@
 				"keyword"
 			],
 			"settings": {
-				"foreground": "#eeeeee",
+				"foreground": "#eeeeee"
 			}
 		},
 		{
@@ -65,11 +75,11 @@
 				"keyword.control",
 				"keyword.other.special-method",
 				"storage.type",
-				"storage.modifier",
+				"storage.modifier"
 			],
 			"settings": {
-				"foreground": "#b9358d",
-				"fontStyle": "bold italic"
+				"foreground": "#b9358d", // magenta
+				"fontStyle": "italic bold"
 			}
 		},
 		{
@@ -102,7 +112,7 @@
 			}
 		},
 		{
-			"name": "Function, Special Method",
+			"name": "Functions",
 			"scope": [
 				"entity.name.function",
 				"meta.function-call",
@@ -110,9 +120,28 @@
 				"support.function",
 			],
 			"settings": {
-				"foreground": "#47c285"
+				"foreground": "#47c285",
 			}
 		},
+    {
+      "name": "Functions - Call",
+      "scope": [
+        "support.function",
+      ],
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Functions - Call - Special",
+      "scope": [
+        "support.function.core",
+        "support.function.kernel",
+      ],
+      "settings": {
+        "fontStyle": "italic bold"
+      }
+    },
 		{
 			"name": "Block Level Variables",
 			"scope": [
@@ -148,6 +177,15 @@
 				"foreground": "#F78C6C"
 			}
 		},
+    {
+      "name": "Constants",
+      "scope": [
+        "constant.language"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+      }
+    },
 		{
 			"name": "Symbols, Inherited Class, Markup Heading",
 			"scope": [
@@ -185,7 +223,7 @@
 				"support.type.sys-types"
 			],
 			"settings": {
-				"foreground": "#FFCB6B",
+				"foreground": "#FFCB6B"
 			}
 		},
 		{
@@ -201,8 +239,6 @@
 		{
 			"name": "Functions",
 			"scope": [
-				"support.function.core",
-				"support.function.kernel",
 				"entity.name.function"
 			],
 			"settings": {
@@ -569,7 +605,7 @@
 				"markup.quote markup.bold string"
 			],
 			"settings": {
-				"fontStyle": "bold italic",
+				"fontStyle": "italic bold",
 				"foreground": "#f07178"
 			}
 		},
@@ -608,7 +644,7 @@
 				"string.other.link.title.markdown"
 			],
 			"settings": {
-				"foreground": "#72b5ec"
+				"foreground": "#72b5ec" // dim cyan
 			}
 		},
 		{
@@ -703,6 +739,74 @@
 			"settings": {
 				"foreground": "#FFCB6B"
 			}
-		}
+		},
+    {
+			"name": "Ruby - Symbol",
+			"scope": [
+				"source.ruby constant.language.symbol.ruby"
+			],
+			"settings": {
+				"foreground": "#aaaaaa"
+			}
+		},
+    {
+			"name": "Ruby - Global",
+			"scope": [
+				"source.ruby variable.other.readwrite.global.ruby"
+			],
+			"settings": {
+        "fontStyle": "italic bold",
+			}
+		},
+    {
+			"name": "Imports",
+			"scope": [
+        "string.quoted.double.include",
+				"source.ruby meta.require.ruby string.quoted.double",
+        "source.swift meta.import.swift entity.name.type.swift"
+			],
+			"settings": {
+				"foreground": "#FFCB6B88",
+        "fontStyle": "italic",
+			}
+		},
+    {
+      "name": "Parameters",
+      "scope": [
+        "meta.parameter-clause",
+      ],
+      "settings": {
+        "foreground": "#72b5ec",
+      }
+    },
+    {
+      "name": "Makefile",
+      "scope": [
+        "source.makefile entity.name.function.target"
+      ],
+      "settings": {
+        "fontStyle": "italic bold",
+      }
+    },
+    {
+      "name": "Shell - Functions",
+      "scope": [
+        "source.shell entity.name.function.shell",
+        "source.shell support.function.builtin.shell",
+        "source.shell entity.name.command.shell",
+      ],
+      "settings": {
+        "fontStyle": "italic bold",
+      }
+    },
+    {
+      "name": "Shell - Options",
+      "scope": [
+        "source.shell constant.other.option",
+      ],
+      "settings": {
+        "foreground": "#72b5eccc",
+      }
+    },
 	]
 }
