@@ -6,3 +6,6 @@ build:
 
 publish:
 	vsce publish
+
+xccolortheme:
+	sh scripts/install_xccolortheme.sh
